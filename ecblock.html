@@ -1,0 +1,14 @@
+<style>.tb{display:inline-block;margin:auto;padding:0.55em;font-size:1.2em;font-family:d2coding;resize:none;}h2{font-family:d2coding;}div{display:inline;}.nw{width:50%;height:100%;display:table;font-size:1.2em;font-family:d2coding;resize:none;word-break:keep-all;}</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<body style='width:100%;height:100%;overflow:hidden;'>
+<h2 class="ls">ECB Encoder 2</h2>
+<textarea class="tb"id="er"rows="8"cols="96"placeholder="last=top"></textarea>
+<input class="tb"id="ph"placeholder="placeholder"size=93>
+<input class="tb"id="re"placeholder="key"size=85><button class="tb"onclick="sen()">Encode</button>
+<a href="" id=9 target=_blank class="nw"></a>
+<script>
+function ge(a){return document.getElementById(a)}
+function sen(){var k1=CryptoJS.SHA256(ge("re").value),nn=CryptoJS.SHA224(ge("re").value)+CryptoJS.AES.encrypt(ge("er").value,k1,{mode:CryptoJS.mode.ECB}),ld=ge("ph").value;ge("er").value='\<input onkeyup=\"ku(this.id);\" placeholder=\"'+ld+'\" id=\"'+nn+'\"\>';ge(9).href='https://yln2.github.io/?'+btoa(ge("er").value);ge(9).innerHTML=ge(9).href}
+</script>
+</body>
+
