@@ -10,6 +10,6 @@
 <script>
 function ge(a){return document.getElementById(a)}
 function ab(a){return CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(a))}
-function sen(){var k1=CryptoJS.SHA256(ge("re").value),nn=CryptoJS.SHA224(ge("re").value)+CryptoJS.AES.encrypt(ge("er").value.replace(/\r\n|\r|\n/g,"<br>"),k1,{mode:CryptoJS.mode.ECB}),ld=ge("ph").value;ge("er").value='\<input onkeyup=\"ku(this.id);\" placeholder=\"'+ld+'\" id=\"'+nn+'\"\>';ge(9).href='https://yln2.github.io/?'+ab(ge("er").value);ge(9).innerHTML=ge(9).href;ge("bs").value=ab(ge("bs").value)}
+function sen(){var k1=CryptoJS.SHA256(ge("re").value),nn=CryptoJS.AES.encrypt(ge("er").value.replace(/\r\n|\r|\n/g,"<br>"),k1,{mode:CryptoJS.mode.ECB}),ld=ge("ph").value;ge("er").value='\<input onkeyup=\"ku(this.id);\" placeholder=\"'+ld+'\" id=\"'+nn+'\"\>';ge(9).href='https://yln2.github.io/?'+ab(ge("er").value);ge(9).innerHTML=ge(9).href;ge("bs").value=ab(ge("bs").value)}
 </script>
 </body>
